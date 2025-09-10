@@ -1,45 +1,45 @@
-**Developing a Neural Network Regression Model**
+# Developing a Neural Network Regression Model
 
-**AIM**
+## AIM :
 To develop a neural network regression model for the given dataset.
 
 
-**THEORY**
+## THEORY :
 
 Regression problems involve predicting a continuous output variable based on input features. Traditional linear regression models often struggle with complex patterns in data. Neural networks, specifically feedforward neural networks, can capture these complex relationships by using multiple layers of neurons and activation functions. In this experiment, a neural network model is introduced with a single linear layer that learns the parameters weight and bias using gradient descent.
 
-**Neural Network Model**
+## Neural Network Model :
 <img width="1130" height="534" alt="Screenshot 2025-09-09 091742" src="https://github.com/user-attachments/assets/e9288558-38b1-4ad4-94cf-b028979ca2ae" />
 
 
-**DESIGN STEPS**
+## DESIGN STEPS :
 
-**STEP 1: Generate Dataset**
+### STEP 1: Generate Dataset 
 Create input values from 1 to 50 and add random noise to introduce variations in output values .
 
-**STEP 2: Initialize the Neural Network Model**
+### STEP 2: Initialize the Neural Network Model
 Define a simple linear regression model using torch.nn.Linear() and initialize weights and bias values randomly.
 
-**STEP 3: Define Loss Function and Optimizer**
+### STEP 3: Define Loss Function and Optimizer
 Use Mean Squared Error (MSE) as the loss function and optimize using Stochastic Gradient Descent (SGD) with a learning rate of 0.001.
 
-**STEP 4: Train the Model**
+### STEP 4: Train the Model
 Run the training process for 100 epochs, compute loss, update weights and bias using backpropagation.
 
-**STEP 5: Plot the Loss Curve**
+### STEP 5: Plot the Loss Curve
 Track the loss function values across epochs to visualize convergence.
 
-**STEP 6: Visualize the Best-Fit Line**
+### STEP 6: Visualize the Best-Fit Line
 Plot the original dataset along with the learned linear model.
 
-**STEP 7: Make Predictions**
+### STEP 7: Make Predictions
 Use the trained model to predict for a new input value .
 
-**PROGRAM**
+## PROGRAM :
 
-**Name: Adhithya K**
+### Name: Adhithya K
 
-**Register Number: 2305002001**
+### Register Number: 2305002001
 
 ```python
 from google.colab import auth
@@ -100,27 +100,27 @@ model.predict(X_n1_1)
 <img width="555" height="767" alt="Screenshot 2025-09-09 091705" src="https://github.com/user-attachments/assets/a912abd8-f919-4ea6-8d1d-a7bc956f6fa5" />
 
 
-**OUTPUT**
+## OUTPUT :
 
-**Training Loss Vs Iteration Plot:**
+### Training Loss Vs Iteration Plot:
 
 <img width="763" height="560" alt="Screenshot 2025-09-09 090721" src="https://github.com/user-attachments/assets/ce0b0cb1-9745-4685-85e4-e3920a4e2774" />
 
-**Epoch Training:**
+### Epoch Training:
 
 <img width="655" height="747" alt="Screenshot 2025-09-09 092642" src="https://github.com/user-attachments/assets/357cf2ae-ce28-4168-beb7-9ff222f8e3ae" />
 
-**Test Data Root Mean Squared Error:**
+### Test Data Root Mean Squared Error:
 
 <img width="672" height="135" alt="Screenshot 2025-09-09 092944" src="https://github.com/user-attachments/assets/fe0eda75-5936-4ca5-9d32-4c686751c932" />
 
- **New Sample Data Prediction:**
+ ### New Sample Data Prediction:
 
 <img width="532" height="165" alt="Screenshot 2025-09-09 092952 - Copy" src="https://github.com/user-attachments/assets/f968e5f1-7992-4ca2-95ec-fc1c75095106" />
 
 
 
 
-**RESULT**
+## RESULT :
 
 Thus, a neural network regression model was successfully developed and trained using PyTorch.
